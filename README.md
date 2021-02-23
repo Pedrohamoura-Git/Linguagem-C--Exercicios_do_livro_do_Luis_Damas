@@ -23,8 +23,10 @@ Saída: _Olá, pequeno Gafanhoto!_ 👍
 
 
 ***_Recomendações_***
-1. O link abaixo permite acesso á um repositório com a lista de emojis disponíveis:
-2. [Repositório de emojis](https://github.com/ikatyang/emoji-cheat-sheet)
+1. O link abaixo permite acesso á um repositório com a lista de emojis disponíveis para uso no **GitHub**:
+2. [Repositório de emojis - GitHub](https://github.com/ikatyang/emoji-cheat-sheet)
+3. Não é possível usar emojis no título da issue através dos comandos do site. Para isso, é recomendado copiar um emoji de um site externo e colá-lo no local desejado.
+4. [Site externo para emojis](https://emojipedia.org/)
 ***
 ### Lista numerada:
 

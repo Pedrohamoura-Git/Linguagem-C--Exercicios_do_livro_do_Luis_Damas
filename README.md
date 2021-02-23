@@ -2,6 +2,7 @@
  Exercícios do **livro do Luís Dantas**
  
 ## Guia da linguagem _Markdown_
+_Também disponível em PDF através do link: [ gustavoguanabara-guia_Markdown](https://github.com/gustavoguanabara/git-github/blob/master/manuais-PDF/guia-markdown.pdf)
 * "_***_" = Linha
 ***
 * "*" ou "_" = *Itálico*

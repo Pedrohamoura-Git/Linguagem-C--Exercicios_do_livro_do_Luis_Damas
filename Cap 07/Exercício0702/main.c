@@ -9,7 +9,7 @@
  Implementar a função abaixo que que verifica se a string contém ou não algum
 caractere, devolvendo o valor lógico correspondente.
 
-    int isnull(char *s)
+            int isnull(char *s)
 
 
 Funcionando?

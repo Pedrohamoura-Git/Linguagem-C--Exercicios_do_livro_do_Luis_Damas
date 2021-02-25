@@ -1,6 +1,3 @@
-# Linguagem C - Livro - Exercicios
- Exercícios do **livro do Luís Dantas**
- 
 ## Guia da linguagem _Markdown_
 * "_***_" = Linha
 ***

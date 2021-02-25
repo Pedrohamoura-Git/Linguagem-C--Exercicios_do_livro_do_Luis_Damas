@@ -5,12 +5,16 @@
 /*
                             Descrição da questão
 
-                            int strlen(char *s)
- Implementar a função acima que devolve o número de caracteres existentes na string
-s (sem contar o '\0').
+
+ Implementar a função abaixp que devolve o número de caracteres existentes na string
+*s (sem contar o '\0').
+
+        int strlen(char *s)
 
 
-    (V) - Funcionando?
+Funcionando?
+    Sim - (V)
+    Não - ()
 */
 //-------------- PROTÓTIPOS DAS FUNÇÕES ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

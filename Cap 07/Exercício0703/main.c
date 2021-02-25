@@ -5,7 +5,7 @@
 
  Implemente a função abaixo que copia a string orig para a string dest.
 
-        char *strepy(char *dest, char *orig)
+            char *strepy(char *dest, char *orig)
 
 
 Funcionando?

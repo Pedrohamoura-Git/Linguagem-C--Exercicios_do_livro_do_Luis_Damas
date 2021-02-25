@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
+#define LIM 50
 /*
                             Descrição da questão
 
- Implemente a função abaixo que devolve o número de caracteres na string s
-(sem contar o '\0').
-
-        int strlen(char *s)
+                            int strlen(char *s)
+ Implementar a função acima que devolve o número de caracteres existentes na string
+s (sem contar o '\0').
 
 
     (V) - Funcionando?
 */
 //-------------- PROTÓTIPOS DAS FUNÇÕES ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 int strlen(char *s);
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,10 +22,14 @@ int main()
     printf("Hello world!\n\n");
 
 //------ Definindo elementos
+    char s[LIM];
 
 //------ Armazenando o input do usuário
+    printf("Insira um nome: ");
+    gets(s);
 
 //------ Imprimindo o resultado
+    printf("\nTamanho do nome inserido: %d\n", strlen(s));
 
 //------ .The End...?
     return 0;
@@ -33,13 +38,22 @@ int main()
 
 int strlen(char *s)
 {
+//------ Definindo elementos
     int i, cont;
 
-    while(s[i] != '\0')
+//------ Contando caracteres
+    for(i = 0, cont = 0; i < LIM; i++)
     {
-        i++;
+        if(s[i] != '\0')
+        {
+            cont++;
+        }
+        else
+        {
+            return cont;
+        }
+
     }
-    return i;
 }
 
 //-------------- COMENTÀRIOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

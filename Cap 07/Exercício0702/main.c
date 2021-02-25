@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+#define LIM 50
 /*
                             Descrição da questão
 
- Implemente a função abaixo que verifica se uma string contém ou não algum caractere,
-devolvendo o valor lógico correspondente.
 
-        int isnull(char*s)
+ Implementar a função abaixo que que verifica se a string contém ou não algum
+caractere, devolvendo o valor lógico correspondente.
+
+    int isnull(char *s)
 
 
     (V) - Funcionando?
@@ -14,25 +17,41 @@ devolvendo o valor lógico correspondente.
 //-------------- PROTÓTIPOS DAS FUNÇÕES ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-int isnull(char*s);
+int isnull(char *s);
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 int main()
 {
     printf("Hello world!\n\n");
 
 //------ Definindo elementos
+    char s[LIM];
 
 //------ Armazenando o input do usuário
+    printf("Insira um nome: ");
+    gets(s);
 
-//------ ...
+//------ Imprimindo o resultado
+    if(isnull(s) == 0)
+    {
+        printf("A string *s NAO POSSUI caractere.\n");
+    }
+    else
+    {
+        printf("A string *s POSSUI caractere.\n");
+    }
 
+
+//------ .The End...?
     return 0;
 }
 //-------------- FUNÇÕES -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-int isnull(char*s)
+int isnull(char *s)
 {
-    if(s[0] == '\0')
+//------ Definindo elementos
+
+//------ Verificando existência de caracteres
+   if(s[0] == '\0')
     {
         return 0;
     }
@@ -40,6 +59,7 @@ int isnull(char*s)
     {
         return 1;
     }
+
 }
 
 //-------------- COMENTÀRIOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,5 +71,14 @@ int isnull(char*s)
 
 //(2)//
 "..."
+
+if(s[0] == '\0')
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
 
 */

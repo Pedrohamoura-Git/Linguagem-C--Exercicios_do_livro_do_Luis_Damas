@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Imprimindo a soma e o produto de dois números inseridos pelo usuário
+
+
 int main()
 {
     printf("Hello world!\n\n");

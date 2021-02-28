@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1612564003 source:f:\henrique\estudo\programaÇÂo\c\projetos\exercícios\(livro) linguagem c\cap 06\prog_teste7\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

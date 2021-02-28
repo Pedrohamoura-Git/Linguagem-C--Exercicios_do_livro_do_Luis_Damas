@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1612448358 source:f:\henrique\estudo\programaÇÂo\c\projetos\exercícios\(livro) linguagem c\cap 06\codingame - ex01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

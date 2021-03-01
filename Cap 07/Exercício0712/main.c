@@ -19,7 +19,7 @@ Funcionando?
     Não - (X)
 ----------------- COMENTÁRIOS ---------------------------------------------------------------------------------------------------------------
 //(1)//
- Por algum motivo o loop para de funcionar quando o código s[j] = s[j+1]; é executado.
+ Por algum motivo o loop para de funcionar quando o código s[ j ] = s[ j+1 ]; (linha 67) é executado.
 Sem ele todas as repetições são realizadas normalmente.
 
 //(2)//

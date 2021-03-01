@@ -36,7 +36,7 @@ int main()
     printf("Hello world!\n\n");
 
 //------ Definindo elementos
-    char *s = "012345";
+    char *s = "12345";
     char ch;
 
 //------ Armazenando o input do usuário
@@ -61,10 +61,12 @@ char *strdelc(char *s, char ch)
         //printf("i: %d\n", i); //Debug i
         if(s[i] == ch)
         {
-            j = i;
-            printf("j: %d\n", j); //Debug j
-            printf("s[%d] = s[%d+1] --> %c\n", j, j, s[j+1]);
-            //(1)//s[j] = s[j+1];
+            for(j = i; j < tam; j++)
+            {
+                printf("j: %d\n", j); //Debug j
+                //(1)//s[j] = s[j+1];
+                printf("s[j] = s[j+1] --> s[%d] = %c\n", j, s[j+1]);
+            }
         }
     }
     return s;

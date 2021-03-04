@@ -16,39 +16,16 @@ qualquer conjunto de de caracteres repetidos consecutivos.
 
 
 Funcionando?
-    Sim - (V)
-    Não - ()
+    Sim - ()
+    Não - (X)
 ----------------- COMENTÁRIOS ---------------------------------------------------------------------------------------------------------------
 //(1)//
- "...."
- 
- char *strpack(char *s)
-{
-    int i = 0, j = 0, k = 0, l, m, tam = strlen(s);
-    char s_aux[strlen(s)];
-//Analisa caractere por caractere
-    for(i = 0; i <= tam; i =j)
-    {
-//Analisa a quantidade de caracteres repetidos
-        for(j = i; j <= tam; j++)
-        {
-            if(s[i] != s[j])
-            {
-//Elimina os caracteres repetidos
-                s_aux[k] = s[i];
-                k++;
-                break;
-            }
-        }
-    }
-    s_aux[k] = '\0';
-    printf("\ntam_s_aux: %d | s_aux:%s\n", strlen(s_aux), s_aux);
-    s = s_aux;
-    return s;
+ O comando if(s[i] != s[j]) (linha 61) encerra o programa por algum motivo.
+
+
 
 //(2)//
  "..."
-
 
 ---------------- PROTÓTIPOS DAS FUNÇÕES -----------------------------------------------------------------------------------------------------
 */
@@ -71,37 +48,28 @@ int main()
     return 0;
 }
 //-------------- FUNÇÕES ---------------------------------------------------------------------------------------------------------------------
-
-char *strpack(char *s)
+ char *strpack(char *s)
 {
-    int i = 0, j = 0, k = 0, l, tam = strlen(s);
-    char s_aux[strlen(s)];
+    int i = 0, j = 0, tam = strlen(s);
 //Analisa caractere por caractere
-    for(i = 0; i <= tam; i++)
+    for(i = 0; i <= tam; i = j)
     {
 //Analisa a quantidade de caracteres repetidos
         for(j = i; j <= tam; j++)
         {
-            if(s[i] != s[j])
+            printf("i: %d | j: %d\n", i, j);
+           //(1)// if(s[i] != s[j])
             {
 //Elimina os caracteres repetidos
-                for(l = i+1; l < j; l++)
-                {
-                    printf("i: %d | l: %d\n", i, l);
-                    s[++l] = s[++j];
-                    printf("s[%2d] = s[%2d]\n", l, m);
-                }
-                /*s_aux[k] = s[i];
-                k++;
+                s[++i] = s[j];
+                printf("s[%d] =  s[%d] = %c\n", i, j, s[j]);
                 break;
-                */
             }
         }
     }
-    s_aux[k] = '\0';
-    printf("\ntam_s_aux: %d | s_aux:%s\n", strlen(s_aux), s_aux);
-    s = s_aux;
+    printf("s_aux: %s\n", s);
     return s;
+
 }
 
 

@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+/*
+----------------- DESCRIÇÃO DA QUESTÃO ------------------------------------------------------------------------------------------------------
+
+ Implemente a função abaixo que transforma a string s, deixando apenas os caracteres
+existentes de n em n posições.
+
+        char *Entremeado(char *s, int n)
+        Ex:
+        strcpy(str, ,"ABCDEFGHIJLMN");
+        Entremeado (str, 0) -> "ABCDEFGHIJKLMN"
+        Entremeado (str, 1) -> "ACEGIKM"
+        Entremeado (str, 3) -> "AEIM"
+
+
+Funcionando?
+    Sim - (V)
+    Não - ()
+----------------- COMENTÁRIOS ---------------------------------------------------------------------------------------------------------------
+//(1)//
+ "...."
+
+//(2)//
+ "..."
+
+
+---------------- PROTÓTIPOS DAS FUNÇÕES -----------------------------------------------------------------------------------------------------
+*/
+
+char *Entremeado(char *s, int n);
+//------------------------------------- -----------------------------------------------------------------------------------------------------
+int main()
+{
+    printf("Hello world!\n\n");
+
+//------ Definindo elementos
+    char *s = "ABCDEFGHIJKLMN";
+    int n = 1;
+
+//------ Armazenando o input do usuário
+
+//------ Imprimindo o resultado
+    printf("s: %s\n", Entremeado(s, n));
+
+//------ The End...?
+    return 0;
+}
+//-------------- FUNÇÕES ---------------------------------------------------------------------------------------------------------------------
+
+char *Entremeado(char *s, int n)
+{
+    int i, j, tam = strlen(s);
+
+    if(n == 0)
+    {
+        return s;
+    }
+    for(i = j = 0; i <= tam; i += n+1)
+    {
+        s[j++] = s[i];
+    }
+    s[j] = '\0';
+    return s;
+}
+
+

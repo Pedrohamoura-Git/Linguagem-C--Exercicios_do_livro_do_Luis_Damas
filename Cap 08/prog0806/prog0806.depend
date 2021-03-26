@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1616767127 source:f:\henrique\estudo\programaÇÂo\git & github\meus projetos\linguagem c - livro\linguagem-c---livro---exercicios\cap 08\prog0806\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

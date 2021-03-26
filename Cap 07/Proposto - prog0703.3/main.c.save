@@ -20,35 +20,38 @@ Funcionando?
     Não - (X)
 ----------------- COMENTÁRIOS ---------------------------------------------------------------------------------------------------------------
 //(1)//
- O comando if(s[i] != s[j]) (linha 61) encerra o programa por algum motivo.
-
+ O comando if(s[i] != s[j]) (linha 64) encerra o programa por algum motivo.
 
 
 //(2)//
  "..."
 
+
+}
+
 ---------------- PROTÓTIPOS DAS FUNÇÕES -----------------------------------------------------------------------------------------------------
 */
 
-char *strpack(char *s);
+int strpack(char *s);
 //------------------------------------- -----------------------------------------------------------------------------------------------------
 int main()
 {
     printf("Hello world!\n\n");
 
 //------ Definindo elementos
-    char *s = "   AAAaaaBBB   CCCIALFFA";
+    char s[] = "   AAAaaaBBB   CCCIALFFA";
 
 //------ Armazenando o input do usuário
 
 //------ Imprimindo o resultado
-    printf("return: %s\n", strpack(s));
+    strpack(s);
+    printf("return: %s\n", s);
 
 //------ The End...?
     return 0;
 }
 //-------------- FUNÇÕES ---------------------------------------------------------------------------------------------------------------------
- char *strpack(char *s)
+  char *strpack(char *s)
 {
     int i = 0, j = 0, tam = strlen(s);
 //Analisa caractere por caractere
@@ -69,7 +72,6 @@ int main()
     }
     printf("s_aux: %s\n", s);
     return s;
-
 }
 
 

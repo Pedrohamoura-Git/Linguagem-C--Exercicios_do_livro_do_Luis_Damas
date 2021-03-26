@@ -26,29 +26,7 @@ Funcionando?
 
 //(2)//
  "..."
-
----------------- PROTÓTIPOS DAS FUNÇÕES -----------------------------------------------------------------------------------------------------
-*/
-
-char *strpack(char *s);
-//------------------------------------- -----------------------------------------------------------------------------------------------------
-int main()
-{
-    printf("Hello world!\n\n");
-
-//------ Definindo elementos
-    char *s = "   AAAaaaBBB   CCCIALFFA";
-
-//------ Armazenando o input do usuário
-
-//------ Imprimindo o resultado
-    printf("return: %s\n", strpack(s));
-
-//------ The End...?
-    return 0;
-}
-//-------------- FUNÇÕES ---------------------------------------------------------------------------------------------------------------------
- char *strpack(char *s)
+  char *strpack(char *s)
 {
     int i = 0, j = 0, tam = strlen(s);
 //Analisa caractere por caractere
@@ -69,6 +47,72 @@ int main()
     }
     printf("s_aux: %s\n", s);
     return s;
+
+
+
+ int strpack(char *s)
+{
+    int i = 0, j = 0, tam = strlen(s);
+    if(tam == 0) return -1;
+    //Analisa caractere por caractere
+    for(i = 0; i <= tam; i = j)
+    {
+    //Analisa a quantidade de caracteres repetidos
+        for(j = i; j <= tam; j++)
+        {
+            if(s[i] != s[j])
+            {
+                //Elimina os caracteres repetidos
+                s[++i] = s[j];
+                //break;
+            }
+        }
+    }
+    return 0;
+}
+
+---------------- PROTÓTIPOS DAS FUNÇÕES -----------------------------------------------------------------------------------------------------
+*/
+
+int strpack(char *s);
+//------------------------------------- -----------------------------------------------------------------------------------------------------
+int main()
+{
+    printf("Hello world!\n\n");
+
+//------ Definindo elementos
+    char s[] = "   AAAaaaBBB   CCCIALFFA";
+
+//------ Armazenando o input do usuário
+
+//------ Imprimindo o resultado
+    strpack(s);
+    printf("return: %s\n", s);
+
+//------ The End...?
+    return 0;
+}
+//-------------- FUNÇÕES ---------------------------------------------------------------------------------------------------------------------
+ int strpack(char *s)
+{
+    int i = 0, j = 0, tam = strlen(s);
+    if(tam == 0)
+        return -1;
+    //Analisa caractere por caractere
+    for(i = 0; i <= tam; i = j)
+    {
+    //Analisa a quantidade de caracteres repetidos
+        for(j = i; j <= tam; j++)
+        {
+            if(s+i != s+j)
+            {
+                //Elimina os caracteres repetidos
+                s[++i] = s[j];
+                //break;
+            }
+        }
+    }
+    return 0;
 
 }
 

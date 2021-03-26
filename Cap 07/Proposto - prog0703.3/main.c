@@ -20,55 +20,13 @@ Funcionando?
     Não - (X)
 ----------------- COMENTÁRIOS ---------------------------------------------------------------------------------------------------------------
 //(1)//
- O comando if(s[i] != s[j]) (linha 61) encerra o programa por algum motivo.
-
+ O comando if(s[i] != s[j]) (linha 64) encerra o programa por algum motivo.
 
 
 //(2)//
  "..."
-  char *strpack(char *s)
-{
-    int i = 0, j = 0, tam = strlen(s);
-//Analisa caractere por caractere
-    for(i = 0; i <= tam; i = j)
-    {
-//Analisa a quantidade de caracteres repetidos
-        for(j = i; j <= tam; j++)
-        {
-            printf("i: %d | j: %d\n", i, j);
-           //(1)// if(s[i] != s[j])
-            {
-//Elimina os caracteres repetidos
-                s[++i] = s[j];
-                printf("s[%d] =  s[%d] = %c\n", i, j, s[j]);
-                break;
-            }
-        }
-    }
-    printf("s_aux: %s\n", s);
-    return s;
 
 
-
- int strpack(char *s)
-{
-    int i = 0, j = 0, tam = strlen(s);
-    if(tam == 0) return -1;
-    //Analisa caractere por caractere
-    for(i = 0; i <= tam; i = j)
-    {
-    //Analisa a quantidade de caracteres repetidos
-        for(j = i; j <= tam; j++)
-        {
-            if(s[i] != s[j])
-            {
-                //Elimina os caracteres repetidos
-                s[++i] = s[j];
-                //break;
-            }
-        }
-    }
-    return 0;
 }
 
 ---------------- PROTÓTIPOS DAS FUNÇÕES -----------------------------------------------------------------------------------------------------
@@ -93,27 +51,27 @@ int main()
     return 0;
 }
 //-------------- FUNÇÕES ---------------------------------------------------------------------------------------------------------------------
- int strpack(char *s)
+  char *strpack(char *s)
 {
     int i = 0, j = 0, tam = strlen(s);
-    if(tam == 0)
-        return -1;
-    //Analisa caractere por caractere
+//Analisa caractere por caractere
     for(i = 0; i <= tam; i = j)
     {
-    //Analisa a quantidade de caracteres repetidos
+//Analisa a quantidade de caracteres repetidos
         for(j = i; j <= tam; j++)
         {
-            if(s+i != s+j)
+            printf("i: %d | j: %d\n", i, j);
+           //(1)// if(s[i] != s[j])
             {
-                //Elimina os caracteres repetidos
+//Elimina os caracteres repetidos
                 s[++i] = s[j];
-                //break;
+                printf("s[%d] =  s[%d] = %c\n", i, j, s[j]);
+                break;
             }
         }
     }
-    return 0;
-
+    printf("s_aux: %s\n", s);
+    return s;
 }
 
 
